@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080b">
+  <meta name="description" content="ASTRO2B — Independent trap artist. Music, visuals and sound from another dimension.">
+  <title>ASTRO2B — Official Website</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #08080b;
+      color: #f5f3fa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 8%;
+      border-bottom: 1px solid #25232c;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 5px;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 28px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #aaa5b5;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        radial-gradient(ellipse at 50% 45%, #342044 0%, #17101f 30%, #08080b 72%);
+    }
+
+    .eyebrow {
+      color: #b99bd8;
+      font-size: 11px;
+      letter-spacing: 6px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(65px, 13vw, 150px);
+      font-weight: 900;
+      letter-spacing: -7px;
+      line-height: 0.9;
+      background: linear-gradient(180deg, #ffffff, #aaa4b6 55%, #514b5d);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      margin-top: 30px;
+      color: #aaa5b5;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 42px;
+      padding: 15px 30px;
+      border: 1px solid #a58bc4;
+      color: white;
+      font-size: 11px;
+      letter-spacing: 3px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #a58bc4;
+      color: #08080b;
+    }
+
+    section {
+      padding: 100px 8%;
+      text-align: center;
+    }
+
+    .section-label {
+      color: #b99bd8;
+      font-size: 10px;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 5vw, 52px);
+      letter-spacing: 3px;
+      margin-bottom: 22px;
+    }
+
+    .description {
+      color: #9994a3;
+      max-width: 540px;
+      margin: auto;
+      line-height: 1.9;
+      font-size: 14px;
+    }
+
+    .music {
+      background: #0d0c11;
+      border-top: 1px solid #25232c;
+      border-bottom: 1px solid #25232c;
+    }
+
+    .music-card {
+      max-width: 600px;
+      margin: 40px auto 0;
+      padding: 35px;
+      border: 1px solid #302a39;
+      background: linear-gradient(135deg, #191420, #0c0b10);
+    }
+
+    .music-card p {
+      color: #aaa5b5;
+      font-size: 12px;
+      letter-spacing: 3px;
+      margin-top: 12px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 35px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #c5b9d3;
+    }
+
+    footer {
+      padding: 35px 20px;
+      text-align: center;
+      color: #66616e;
+      font-size: 10px;
+      letter-spacing: 3px;
+      border-top: 1px solid #25232c;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 22px 5%;
+      }
+
+      nav .links {
+        gap: 12px;
+        font-size: 9px;
+      }
+
+      .logo {
+        font-size: 17px;
+        letter-spacing: 3px;
+      }
+
+      h1 {
+        letter-spacing: -4px;
+      }
+
+      section {
+        padding: 75px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="logo">ASTRO2B</a>
+    <div class="links">
+      <a href="#about">ABOUT</a>
+      <a href="#music">MUSIC</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">INDEPENDENT ARTIST</div>
+      <h1>ASTRO2B</h1>
+      <div class="subtitle">TRAP · MUSIC · ANOTHER DIMENSION</div>
+      <a href="#music" class="button">EXPLORE THE MUSIC ↗</a>
+    </div>
+
+    <section id="about">
+      <div class="section-label">01 / THE ARTIST</div>
+      <h2>BEYOND THE SOUND.</h2>
+      <p class="description">
+        Welcome to the world of ASTRO2B.
+        An independent artist exploring sound, identity
+        and creative expression through trap music.
+        This is only the beginning.
+      </p>
+    </section>
+
+    <section id="music" class="music">
+      <div class="section-label">02 / DISCOGRAPHY</div>
+      <h2>THE MUSIC.</h2>
+      <p class="description">
+        New sounds. New dimensions. More coming soon.
+      </p>
+
+      <div class="music-card">
+        <h2>COMING SOON</h2>
+        <p>ASTRO2B — NEW RELEASES</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-label">03 / CONNECT</div>
+      <h2>STAY CONNECTED.</h2>
+      <p class="description">
+        For collaborations, music inquiries and creative projects.
+      </p>
+
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank">INSTAGRAM ↗</a>
+        <a href="https://youtube.com/" target="_blank">YOUTUBE ↗</a>
+        <a href="https://open.spotify.com/" target="_blank">SPOTIFY ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 ASTRO2B · ALL RIGHTS RESERVED
+  </footer>
+
+</body>
+</html>
